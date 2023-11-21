@@ -1,0 +1,81 @@
+API REGISTRAR LIBROS
+-----------------------
+URL: http://localhost:60/bibliotecapp/api/librosCrear.php
+JSON BODY REQUEST
+{
+  "isb":"as23",
+  "titul":"ciclismo",
+  "descripci":"buen libro",
+  "autor":"pablo",
+  "edici":"piedra",
+  "ejemplar":"numero 2",
+  "estad":"activo"
+}
+METHOD: POST
+JSON RESPONSE
+{
+  "data": null,
+  "error": "0",
+  "msg": "Operación satisfactoria"
+}
+
+=======================
+API CONSULTAR LIBROS
+-----------------------
+OBTENER TODOS LOS REGISTROS
+URL: http://localhost:60/bibliotecapp/api/librosGet.php
+OBTENER 1 LIBRO
+URL: http://localhost:60/bibliotecapp/api/librosGet.php?id=2
+JSON BODY RESPONSE
+{
+      "idl": 2,
+      "isb": "as23",
+      "titul": "ciclismo",
+      "descripci": "buen libro",
+      "autor": "pablo",
+      "edici": "piedra",
+      "ejemplar": "numero 2",
+      "estad": "activo"
+}
+METHOD: GET
+
+=======================
+API ACTUALIZAR LIBROS
+-----------------------
+URL: http://localhost:60/bibliotecapp/api/librosUpdate.php
+JSON BODY REQUEST
+{
+  "idl": 1,
+  "isb":"as24",
+  "titul":"ciclismo",
+  "descripci":"buen libro",
+  "autor":"pablo",
+  "edici":"piedra",
+  "ejemplar":"numero 2",
+  "estad":"activo"
+}
+METHOD: PUT
+JSON RESPONSE
+{
+  "data": null,
+  "error": "0",
+  "msg": "Operación satisfactoria"
+}
+
+
+=======================
+API ELIMINAR LIBROS
+-----------------------
+URL: http://localhost:60/bibliotecapp/api/librosDelete.php
+JSON BODY REQUEST
+{
+  "idl": 2,
+}
+METHOD: DELETE
+JSON RESPONSE
+{
+  "data": null,
+  "error": "0",
+  "msg": "Operación satisfactoria"
+}
+

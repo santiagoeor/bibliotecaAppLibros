@@ -1,0 +1,86 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "bibliotecapp",
+    "dateExported": "2023-11-21T12:16:38.742Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "1811dd4a-47b4-42e3-8ab0-bd5a867a647e",
+            "colId": "c0460acd-c551-4b14-8e5a-672545da1150",
+            "containerId": "",
+            "name": "Crear Libro",
+            "url": "http://localhost:60/bibliotecapp/api/librosCrear.php",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-21T12:05:31.908Z",
+            "modified": "2023-11-21T12:05:31.908Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"isb\":\"as23\",\n  \"titul\":\"ciclismo\",\n  \"descripci\":\"buen libro\",\n  \"autor\":\"pablo\",\n  \"edici\":\"piedra\",\n  \"ejemplar\":\"numero 2\",\n  \"estad\":\"activo\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7e8b909d-2d1a-4106-bd4c-642a4d6a4257",
+            "colId": "c0460acd-c551-4b14-8e5a-672545da1150",
+            "containerId": "",
+            "name": "Editar Libro",
+            "url": "http://localhost:60/bibliotecapp/api/librosUpdate.php",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2023-11-21T12:05:47.654Z",
+            "modified": "2023-11-21T12:14:14.798Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"idl\":2,\n  \"isb\":\"as24\",\n  \"titul\":\"ciclismo\",\n  \"descripci\":\"buen libro\",\n  \"autor\":\"pablo\",\n  \"edici\":\"piedra\",\n  \"ejemplar\":\"numero 2\",\n  \"estad\":\"activo\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "86eef52b-78ca-4c99-8702-074a14047900",
+            "colId": "c0460acd-c551-4b14-8e5a-672545da1150",
+            "containerId": "",
+            "name": "listado de libros",
+            "url": "http://localhost:60/bibliotecapp/api/librosGet.php?id=2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-21T12:06:01.297Z",
+            "modified": "2023-11-21T12:11:23.638Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "2",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "c3d63b5d-ca2e-4093-9382-108e81809638",
+            "colId": "c0460acd-c551-4b14-8e5a-672545da1150",
+            "containerId": "",
+            "name": "Eliminar Libro",
+            "url": "http://localhost:60/bibliotecapp/api/librosDelete.php",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-11-21T12:06:52.416Z",
+            "modified": "2023-11-21T12:15:31.991Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"idl\":2\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
